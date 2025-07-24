@@ -6,7 +6,7 @@ import userRoutes from '../routes/userRoutes';
 import authRoutes from '../routes/authRoutes';
 import contactRoutes from '../routes/contactRoutes';
 import groupRoutes from '../routes/groupRoutes';
-
+import emailRoutes from '../routes/emailRoutes';
 
 
 dotenv.config();
@@ -24,6 +24,8 @@ app.use('/api/auth', authRoutes);
 app.use('/api/contacts', contactRoutes);
 app.use('/api/groups', groupRoutes);
 app.use('/api/contacts', contactRoutes);
+
+app.use('/api/emails', emailRoutes);
 
 
 
