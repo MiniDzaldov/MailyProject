@@ -4,6 +4,8 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import userRoutes from '../routes/userRoutes';
 import authRoutes from '../routes/authRoutes';
+import contactRoutes from '../routes/contactRoutes';
+import groupRoutes from '../routes/groupRoutes';
 
 
 
@@ -19,6 +21,10 @@ app.get('/api/ping', (_, res) => res.send('pong!'));
 
 app.use('/api/users', userRoutes);
 app.use('/api/auth', authRoutes);
+app.use('/api/contacts', contactRoutes);
+app.use('/api/groups', groupRoutes);
+app.use('/api/contacts', contactRoutes);
+
 
 
 mongoose.connect(process.env.MONGO_URI!)
