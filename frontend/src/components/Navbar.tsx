@@ -54,12 +54,13 @@ export default function Navbar({ isAuthenticated, userName, onLogout }: NavbarPr
   );
 
   return (
-    <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
-      <Menubar
-        model={items}
-        end={end}
-        className="border-none shadow-none bg-transparent text-white"
-      />
-    </div>
+    <div className="bg-gradient-to-r from-indigo-300 via-purple-300 to-pink-300">
+    <Menubar
+      model={items}
+      end={end}
+      className="border-none shadow-none bg-transparent text-white"
+    />
+  </div>
+  
   );
 }
